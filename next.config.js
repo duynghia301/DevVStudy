@@ -1,11 +1,9 @@
-/** @type {import('next').NextConfig} */
+// next.config.js
 const nextConfig = {
-  output: 'export',
-  images: {
-    unoptimized: true, // Nếu sử dụng `next/image`, bạn cần tắt tối ưu hóa ảnh.
-  },
-  assetPrefix: './',
-  basePath: '/DevVStudy', // Đổi <repository-name> thành tên repository GitHub.
+  reactStrictMode: true,
+  swcMinify: true,
 };
-
+module.exports = {
+  output: 'export',
+};
 module.exports = nextConfig;

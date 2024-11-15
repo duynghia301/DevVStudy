@@ -1,0 +1,30 @@
+/* src/app/notifications/page.css */
+.notifications-container {
+    margin-top: 20px;
+  }
+  
+  .notification-item {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+  }
+  
+  .notification-item p {
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .notification-item .mark-read {
+    background-color: #1a73e8;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  .notification-item .mark-read:hover {
+    background-color: #0c56a1;
+  }
+  

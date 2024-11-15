@@ -1,0 +1,26 @@
+/* src/app/assignments/[id]/page.css */
+.assignment-details-container {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px auto;
+  }
+  
+  .assignment-textarea {
+    margin-top: 20px;
+  }
+  
+  .assignment-submit-button {
+    margin-top: 20px;
+    background-color: #1a73e8;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+  }
+  
+  .assignment-submit-button:disabled {
+    background-color: #d3d3d3;
+  }
+  

@@ -1,4 +1,69 @@
-*{
-  padding: 0;
+/* globals.css */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f6f9;
+  color: #333;
   margin: 0;
+  padding: 0;
+}
+
+h2, h3, h4 {
+  color: #1a73e8;
+}
+
+.container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+}
+
+.card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.ant-btn-primary {
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+  transition: background-color 0.3s;
+}
+
+.ant-btn-primary:hover {
+  background-color: #0c56a1;
+  border-color: #0c56a1;
+}
+/* globals.css - Đảm bảo giao diện đáp ứng */
+@media (max-width: 768px) {
+  .assignments-container,
+  .assignment-details-container,
+  .discussion-container,
+  .discussion-detail-container,
+  .grades-container {
+    padding: 10px;
+  }
+
+  .assignment-card,
+  .assignment-details-container,
+  .message-list {
+    padding: 15px;
+  }
+
+  .assignment-submit-button,
+  .back-button,
+  .assignment-button {
+    width: 100%;
+  }
+
+  .message-input {
+    margin-top: 10px;
+  }
+
+  .container {
+    padding: 10px;
+  }
 }

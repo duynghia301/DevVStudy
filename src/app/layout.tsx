@@ -4,6 +4,13 @@ import "@/app/globals.css";
 import React from 'react';
 import { AntdRegistry } from '@ant-design/nextjs-registry';
 
+import { Layout } from 'antd'; 
+
+
+
+
+
+
 const geistSans = localFont({
   src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
