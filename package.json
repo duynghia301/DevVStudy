@@ -1,6 +1,9 @@
 {
   "name": "front-vstudy",
   "version": "0.1.0",
+  "author": {
+    "name": "ĐỒ ÁN VStudy UEF  - Duy Nghĩa và Hoàng Sơn"
+  },
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -9,16 +12,19 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "react": "19.0.0-rc-66855b96-20241106",
-    "react-dom": "19.0.0-rc-66855b96-20241106",
-    "next": "15.0.3"
+    "@ant-design/nextjs-registry": "1.0.0",
+    "antd": "^5.19.3",
+    "front-vstudy": "file:",
+    "next": "^14.2.18",
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
   },
   "devDependencies": {
-    "typescript": "^5",
-    "@types/node": "^20",
-    "@types/react": "^18",
-    "@types/react-dom": "^18",
-    "eslint": "^8",
-    "eslint-config-next": "15.0.3"
+    "@types/node": "22.9.0",
+    "@types/react": "18.3.12",
+    "@types/react-dom": "18.3.1",
+    "eslint": "9.14.0",
+    "eslint-config-next": "15.0.3",
+    "typescript": "5.6.3"
   }
 }
