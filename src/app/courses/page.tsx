@@ -4,6 +4,7 @@
 import React from 'react';
 import { Button, Card, Col, Row } from 'antd';
 import { useRouter } from 'next/navigation';
+import './page.css'; // Import CSS
 
 const Courses = () => {
   const router = useRouter();

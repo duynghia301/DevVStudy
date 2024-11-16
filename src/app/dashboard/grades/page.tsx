@@ -3,6 +3,7 @@
 
 import React from 'react';
 import { Table } from 'antd';
+import './page.css'; // Import CSS
 
 const Grades = () => {
   const data = [

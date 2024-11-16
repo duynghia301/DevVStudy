@@ -1,4 +1,16 @@
-/* Reset CSS */
+// Reset styles
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  /* Reset CSS */
 * {
     margin: 0;
     padding: 0;
