@@ -1,5 +1,6 @@
 // /app/attendance/page.tsx
 'use client'
+
 const AttendancePage = () => {
 
 

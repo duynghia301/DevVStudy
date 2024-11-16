@@ -9,10 +9,10 @@ const Home = () => (
         <h1>Chào mừng đến với VStudy</h1>
         <p>Cùng VStudy học với mọi người</p>
         <div className="btn-container">
-          <Link href="/auth/login">
+          <Link href="/signin">
             <Button type="primary" className="btn">Đăng nhập</Button>
           </Link>
-          <Link href="/auth/register">
+          <Link href="/signup">
             <Button type="default" className="btn">Đăng ký</Button>
           </Link>
         </div>
