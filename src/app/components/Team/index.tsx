@@ -5,37 +5,19 @@ import SingleTeam from "./SingleTeam";
 const teamData: TeamType[] = [
   {
     id: 1,
-    name: "Adveen Desuza",
-    designation: "UI Designer",
+    name: "Duy Nghĩa",
+    designation: "215052169",
     image: "/images/team/team-01.png",
-    facebookLink: "/#",
-    twitterLink: "/#",
-    instagramLink: "/#",
+    facebookLink: "https://www.facebook.com/Duynghia301/",
+    twitterLink: "https://www.instagram.com/yuin.ng/",
+    instagramLink: "https://www.instagram.com/yuin.ng/",
   },
   {
     id: 2,
-    name: "Jezmin uniya",
-    designation: "Product Designer",
+    name: "Hoàng Sơn",
+    designation: "215052",
     image: "/images/team/team-02.png",
-    facebookLink: "/#",
-    twitterLink: "/#",
-    instagramLink: "/#",
-  },
-  {
-    id: 3,
-    name: "Andrieo Gloree",
-    designation: "App Developer",
-    image: "/images/team/team-03.png",
-    facebookLink: "/#",
-    twitterLink: "/#",
-    instagramLink: "/#",
-  },
-  {
-    id: 4,
-    name: "Jackie Sanders",
-    designation: "Content Writer",
-    image: "/images/team/team-04.png",
-    facebookLink: "/#",
+    facebookLink: "https://www.facebook.com/nguyenhoangson.heh",
     twitterLink: "/#",
     instagramLink: "/#",
   },
@@ -50,9 +32,9 @@ const Team = () => {
       <div className="container">
         <div className="mb-[60px]">
           <SectionTitle
-            subtitle="Our Team"
-            title="Meet Our Team"
-            paragraph="There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some form."
+            subtitle="Đồ án"
+            title="Nhóm 12 - Lớp 21D1TH-PM02"
+            paragraph="Chúng tôi là 2 cá nhân vô tình va vào nhau rồi làm đồ án"
             width="640px"
             center
           />

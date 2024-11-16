@@ -17,14 +17,22 @@
     "@next/swc-win32-x64-msvc": "^15.0.3",
     "antd": "^5.19.3",
     "autoprefixer": "^10.4.20",
+    "bcrypt": "^5.1.1",
     "front-vstudy": "file:",
+    "gray-matter": "^4.0.3",
     "next": "^14.2.18",
+    "nodemailer": "^6.9.16",
     "postcss": "^8.4.49",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "remark": "^15.0.1",
+    "remark-html": "^16.0.1",
+    "stripe": "^17.3.1"
   },
   "devDependencies": {
+    "@types/bcrypt": "^5.0.2",
     "@types/node": "22.9.0",
+    "@types/nodemailer": "^6.4.16",
     "@types/react": "18.3.12",
     "@types/react-dom": "18.3.1",
     "eslint": "9.14.0",

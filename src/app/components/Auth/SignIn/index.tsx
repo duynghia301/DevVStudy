@@ -10,6 +10,7 @@ import SwitchOption from "../SwitchOption";
 import MagicLink from "../MagicLink";
 import Loader from "@/app/components/Common/Loader";
 
+
 const Signin = () => {
   const router = useRouter();
 

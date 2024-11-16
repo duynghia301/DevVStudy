@@ -1,30 +1,35 @@
 import React from 'react';
-import Link from 'next/link';
-import { Button } from 'antd';
+
+import Hero from './components/Hero';
+import Header from './components/Header';
+import { Metadata } from 'next';
+import About from './components/About';
+import Contact from './components/Contact';
+import Clients from './components/Clients';
+import ScrollUp from './components/Common/ScrollUp';
+import CallToAction from './components/CallToAction';
+
+export const metadata: Metadata = {
+  title: "Home",
+  description: "Đồ Án Group 12 Nghĩa, Sơn",
+};
+
 
 const Home = () => (
   <div>
     <div className="header">
       <div>
-        <h1>Chào mừng đến với VStudy</h1>
-        <p>Cùng VStudy học với mọi người</p>
-        <div className="btn-container">
-          <Link href="/signin">
-            <Button type="primary" className="btn">Đăng nhập</Button>
-          </Link>
-          <Link href="/signup">
-            <Button type="default" className="btn">Đăng ký</Button>
-          </Link>
-        </div>
+      <ScrollUp />
+
+        <Hero/>
+        <About/>
+        <CallToAction />
+        <Contact/>
+        <Clients />
       </div>
     </div>
 
-    <div className="content">
-      <h2>Học tập dễ dàng mọi lúc mọi nơi!</h2>
-      <p>
-        Ứng dụng học tập trực tuyến, dễ dàng, tiện lợi
-      </p>
-    </div>
+ 
   </div>
 );
 

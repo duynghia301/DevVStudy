@@ -11,8 +11,8 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        ...colors,
-        // primary: "#1A202C",
+        sky: '#3B82F6',
+    gray: '#9CA3AF',
       },
     },
   },

@@ -12,24 +12,19 @@ const About = () => {
             <div className="w-full px-4 lg:w-1/2">
               <div className="mb-12 max-w-[540px] lg:mb-0">
                 <h2 className="mb-5 text-3xl font-bold leading-tight text-dark dark:text-white sm:text-[40px] sm:leading-[1.2]">
-                  Brilliant Toolkit to Build Next.js SaaS Websites.
+                 Đại học kinh tế tài chính HCM
                 </h2>
                 <p className="mb-10 text-base leading-relaxed text-body-color dark:text-dark-6">
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel discussions and roundtables led by subject
-                  matter experts.
+                  Công nghệ thông tin - chuyên ngành công nghệ phần mềm
                   <br /> <br />
-                  The main thrust is to focus on educating attendees on how to
-                  best protect highly vulnerable business applications with
-                  interactive panel.
+                  Chúng tôi Group 12 luôn muốn sáng tạo và thách thức bản thân mình sau khoảng thời gian tích lũy kiến thức UEF, hiện nay chúng tôi đang phát triển 1 website cho phép người dùng dễ dàng học tập từ những chuyên gia, giảng viên,.... chúng tôi muốn phát triển nó hoạt động và có thể đưa vào hoạt động trong môi trường giáo dục!
                 </p>
 
                 <a
                   href="/#"
                   className="inline-flex items-center justify-center rounded-md bg-primary px-7 py-3 text-center text-base font-medium text-white duration-300 hover:bg-primary/90"
                 >
-                  Know More
+                  Xem thêm
                 </a>
               </div>
             </div>
@@ -62,14 +57,12 @@ const About = () => {
                   <div className="relative z-10 mb-4 flex items-center justify-center overflow-hidden bg-primary px-6 py-12 sm:mb-8 sm:h-[160px] sm:p-5 lg:mb-4 xl:mb-8">
                     <div>
                       <span className="block text-5xl font-extrabold text-white">
-                        09
+                        K21
                       </span>
                       <span className="block text-base font-semibold text-white">
-                        We have
+                        Our team has 3 Years of experience
                       </span>
-                      <span className="block text-base font-medium text-white text-opacity-70">
-                        Years of experience
-                      </span>
+                     
                     </div>
                     <div>
                       <span className="absolute left-0 top-0 -z-10">
