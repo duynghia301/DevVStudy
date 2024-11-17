@@ -9,8 +9,6 @@ export const metadata: Metadata = {
 const ErrorPage = () => {
   return (
     <>
-      <Breadcrumb pageName="404 Page" />
-
       <NotFound />
     </>
   );

@@ -150,7 +150,7 @@ const Header = () => {
                     {menuData.map((menuItem, index) =>
                       menuItem.path ? (
                         <li key={index} className="group relative">
-                          {pathUrl !== "/" ? (
+                          {pathUrl !== "#" ? (
                             <Link
                               onClick={navbarToggleHandler}
                               scroll={false}
@@ -181,7 +181,7 @@ const Header = () => {
                         </li>
                       ) : (
                         <li className="submenu-item group relative" key={index}>
-                          {pathUrl !== "/" ? (
+                          {pathUrl !== "#" ? (
                             <button
                               onClick={() => handleSubmenu(index)}
                               className={`ud-menu-scroll flex items-center justify-between py-2 text-base text-dark group-hover:text-primary dark:text-white dark:group-hover:text-primary lg:inline-flex lg:px-0 lg:py-6`}

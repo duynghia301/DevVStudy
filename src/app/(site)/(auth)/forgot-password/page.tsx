@@ -10,8 +10,9 @@ export const metadata: Metadata = {
 const ForgotPasswordPage = () => {
   return (
     <>
-      <Breadcrumb pageName="Forget Password" />
       <ForgotPassword />
+      <Breadcrumb pageName="Forget Password" />
+
     </>
   );
 };

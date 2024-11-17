@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const colors = require('tailwindcss/colors')
+import colors from "tailwindcss/colors";
 
 const config: Config = {
   darkMode: "class",
@@ -11,11 +11,12 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        sky: '#3B82F6',
-    gray: '#9CA3AF',
+        // primary: "#1A202C", // Example primary color
+        ...colors,          // Add default Tailwind colors
       },
     },
   },
   plugins: [require("tailgrids/plugin")],
 };
+
 export default config;

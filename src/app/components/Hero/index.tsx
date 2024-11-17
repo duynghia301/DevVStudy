@@ -1,9 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
+import Header from "../Header";
+import About from "../About";
+import CallToAction from "../CallToAction";
+import Contact from "../Contact";
+import Clients from "../Clients";
 
 const Hero = () => {
   return (
     <>
+    <Header />
       <section
         id="home"
         className="relative overflow-hidden bg-primary pt-[120px] md:pt-[130px] lg:pt-[160px]"
@@ -1227,6 +1233,10 @@ const Hero = () => {
           </div>
         </div>
       </section>
+      <About />
+      <CallToAction />
+      <Contact   />
+      <Clients />
     </>
   );
 };

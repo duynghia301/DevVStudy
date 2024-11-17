@@ -9,7 +9,6 @@ import { useEffect, useState } from "react";
 import { ThemeProvider } from "next-themes";
 import PreLoader from "@/app/components/Common/PreLoader";
 
-import Header from "./components/Header";
 import ToasterContext from "./api/contex/ToasetContex";
 
 export default function RootLayout({
@@ -32,21 +31,22 @@ export default function RootLayout({
       <head />
 
       <body>
-    
+        {loading ? (
+          <PreLoader />
+        ) : (
           <SessionProvider>
-           <ThemeProvider 
+            <ThemeProvider
               attribute="class"
               enableSystem={false}
               defaultTheme="light"
             >
               <ToasterContext />
-              <Header />
               {children}
               <Footer />
               <ScrollToTop />
             </ThemeProvider>
           </SessionProvider>
-     
+        )}
       </body>
     </html>
   );
