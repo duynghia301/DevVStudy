@@ -1,27 +1,34 @@
-import { Layout } from "antd";
-import SiderMain from "../components/layout/m.sidebar";
-import HeaderMain from "../components/layout/m.header";
-import FooterMain from "../components/layout/m.footer";
-import ContentMain from "../components/m.content";
+import { auth } from '@/auth';
+import AdminContent from '@/app/components/layout/admin.content';
+import AdminHeader from '@/app/components/layout/admin.header';
+import AdminSideBar from '@/app/components/layout/admin.sidebar';
+import { AdminContextProvider } from '@/library/admin.context';
+import Header from '../components/Header';
 
-const LayoutMain =({
+const AdminLayout = async ({
     children,
-  }: Readonly<{
+}: Readonly<{
     children: React.ReactNode;
-  }>) =>{
-    return(
-      <Layout>
-      <SiderMain/>
-      <Layout>
-        <HeaderMain/>
-         <ContentMain>
-           {children}
-         </ContentMain>
-        <FooterMain/>
-      </Layout>
-    </Layout>
+}>) => {
 
+    const session = await auth()
+
+    return (
+        <AdminContextProvider>
+            <div style={{ display: "flex" }}>
+                <div className='left-side' style={{ minWidth: 80 }}>
+                    <AdminSideBar />
+                </div>
+                <div className='right-side' style={{ flex: 1 }}>
+                    <AdminHeader/>
+                    <AdminContent>
+
+                        {children}
+                    </AdminContent>
+                </div>
+            </div>
+        </AdminContextProvider>
     )
 }
 
-export default LayoutMain;
+export default AdminLayout

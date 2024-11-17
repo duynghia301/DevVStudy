@@ -9,7 +9,8 @@ import SocialSignIn from "../SocialSignIn";
 import SwitchOption from "../SwitchOption";
 import MagicLink from "../MagicLink";
 import Loader from "@/app/components/Common/Loader";
-
+import { handlers } from "../../../../auth" // Referring to the auth.ts we just created
+export const { GET, POST } = handlers
 
 const Signin = () => {
   const router = useRouter();
@@ -39,7 +40,7 @@ const Signin = () => {
         if (callback?.ok && !callback?.error) {
           toast.success("Login successful");
           setLoading(false);
-          router.push("/");
+          router.push("/dashboard");
         }
       })
       .catch((err) => {

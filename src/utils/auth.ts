@@ -47,21 +47,21 @@ export const authOptions: NextAuthOptions = {
         }
 
         // check to see if passwords match
-        const passwordMatch = await bcrypt.compare(
-          credentials.password,
-          user.password,
-        );
+        // const passwordMatch = await bcrypt.compare(
+        //   // credentials.password,
+        //   user.password,
+        // );
 
         // console.log(passwordMatch);
 
-        if (!passwordMatch) {
-          console.log("test", passwordMatch);
-          throw new Error("Incorrect password");
-        }
+      //   if (!passwordMatch) {
+      //     console.log("test", passwordMatch);
+      //     throw new Error("Incorrect password");
+      //   }
 
-        return user;
-      },
-    }),
+      //   return user;
+      // },
+    // }),
 
     GitHubProvider({
       clientId: process.env.GITHUB_CLIENT_ID!,
@@ -100,19 +100,19 @@ export const authOptions: NextAuthOptions = {
       return token;
     },
 
-    session: async ({ session, token }) => {
-      if (session?.user) {
-        return {
-          ...session,
-          user: {
-            ...session.user,
-            id: token?.id,
-          },
-        };
-      }
-      return session;
-    },
-  },
+  //   session: async ({ session, token }) => {
+  //     if (session?.user) {
+  //       return {
+  //         ...session,
+  //         user: {
+  //           ...session.user,
+  //           id: token?.id,
+  //         },
+  //       };
+  //     }
+  //     return session;
+  //   },
+  // },
 
   // debug: process.env.NODE_ENV === "developement",
 };

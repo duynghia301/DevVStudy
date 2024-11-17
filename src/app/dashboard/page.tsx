@@ -1,27 +1,12 @@
-'use client';
+import AdminCard from "@/app/components/admin/admin.card";
 
-import React from 'react';
+const DashboardPage = () => {
 
-import { UploadOutlined, UserOutlined, VideoCameraOutlined } from '@ant-design/icons';
-import { Layout,  theme } from 'antd';
-import HeaderMain from '../components/layout/m.header';
-import FooterMain from '../components/layout/m.footer';
-import SiderMain from '../components/layout/m.sidebar';
-import ContentMain from '../components/m.content';
+    return (
+        <div>
+            <AdminCard />
+        </div>
+    )
+}
 
-const Dashboard = () => {
-  
- 
-
-  return (
-    <Layout>
-      <SiderMain/>
-      <Layout>
-        <HeaderMain/>
-        <FooterMain/>
-      </Layout>
-    </Layout>
-  );
-};
-
-export default Dashboard;
+export default DashboardPage;

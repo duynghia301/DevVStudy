@@ -10,6 +10,7 @@ import { ThemeProvider } from "next-themes";
 import PreLoader from "@/app/components/Common/PreLoader";
 
 import ToasterContext from "./api/contex/ToasetContex";
+import Header from "./components/Header";
 
 export default function RootLayout({
   children,
@@ -42,7 +43,6 @@ export default function RootLayout({
             >
               <ToasterContext />
               {children}
-              <Footer />
               <ScrollToTop />
             </ThemeProvider>
           </SessionProvider>

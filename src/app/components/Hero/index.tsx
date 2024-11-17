@@ -5,6 +5,7 @@ import About from "../About";
 import CallToAction from "../CallToAction";
 import Contact from "../Contact";
 import Clients from "../Clients";
+import Footer from "../Footer";
 
 const Hero = () => {
   return (
@@ -1237,6 +1238,8 @@ const Hero = () => {
       <CallToAction />
       <Contact   />
       <Clients />
+      <Footer />
+
     </>
   );
 };
